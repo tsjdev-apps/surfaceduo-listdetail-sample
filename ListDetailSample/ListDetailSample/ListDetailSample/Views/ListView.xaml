@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CollectionView xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="ListDetailSample.Views.ListView"
+                SelectionMode="Single">
+
+    <CollectionView.ItemsLayout>
+        <LinearItemsLayout ItemSpacing="12"
+                           Orientation="Vertical" />
+    </CollectionView.ItemsLayout>
+
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <Frame BorderColor="LightGray">
+                <StackLayout Padding="5">
+                    <Label Text="{Binding Title}"
+                           FontSize="Title" />
+                </StackLayout>
+            </Frame>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+
+</CollectionView>

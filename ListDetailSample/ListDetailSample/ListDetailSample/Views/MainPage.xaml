@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dualscreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+             xmlns:views="clr-namespace:ListDetailSample.Views"
+             x:Class="ListDetailSample.Views.MainPage"
+             Title="Surface Duo: List Detail"
+             Padding="16"
+             Visual="Material">
+    
+    <ContentPage.Content>
+        <dualscreen:TwoPaneView MinWideModeWidth="4000"
+                                MinTallModeHeight="4000">
+            <dualscreen:TwoPaneView.Pane1>
+                <views:ListView x:Name="ListViewPage" />
+            </dualscreen:TwoPaneView.Pane1>
+            <dualscreen:TwoPaneView.Pane2>
+                <views:DetailView x:Name="DetailViewPage" />
+            </dualscreen:TwoPaneView.Pane2>
+        </dualscreen:TwoPaneView>
+    </ContentPage.Content>
+    
+</ContentPage>

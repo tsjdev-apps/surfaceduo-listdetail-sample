@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      x:Class="ListDetailSample.Views.DetailView"
+      RowDefinitions="Auto,*"
+      Padding="16">
+
+    <Label Grid.Row="0">
+        <Label.FormattedText>
+            <FormattedString>
+                <Span Text="Title: "
+                      FontAttributes="Bold" />
+                <Span Text="{Binding Title}" />
+            </FormattedString>
+        </Label.FormattedText>
+    </Label>
+
+    <Label Grid.Row="1">
+        <Label.FormattedText>
+            <FormattedString>
+                <Span Text="Details: "
+                      FontAttributes="Bold" />
+                <Span Text="{Binding Detail}" />
+            </FormattedString>
+        </Label.FormattedText>
+    </Label>
+    
+</Grid>
